@@ -77,7 +77,7 @@ const Mainpage = () => {
           <div className="current-weather">
             <h2>Current Weather in {city}</h2>
             <button onClick={handleUnitToggle}>{unit === 'metric' ? 'Celsius' : 'Fahrenheit'}</button>
-            <table cellPadding={5} cellSpacing={3}>
+            {/* <table cellPadding={5} cellSpacing={3}>
               <tr>
                 <th>Date:</th>
                 <td>{getCurrentDate()}</td>
@@ -121,7 +121,53 @@ const Mainpage = () => {
                   <img src={`http://openweathermap.org/img/wn/${weather.weather[0]?.icon}.png`}alt={weather.weather[0]?.description}/>
                 </td>
               </tr>
-            </table>
+            </table> */}
+            <div className="weather-info">
+  <div>
+    <span>Date:</span>
+    <span>{getCurrentDate()}</span>
+  </div>
+  <div>
+    <span>Temperature:</span>
+    <span>
+      {weather.main?.temp}°{unit === 'metric' ? 'C' : 'F'}
+    </span>
+  </div>
+  <div>
+    <span>Min Temperature:</span>
+    <span>
+      {weather.main?.temp_min}°{unit === 'metric' ? 'C' : 'F'}
+    </span>
+  </div>
+  <div>
+    <span>Max Temperature:</span>
+    <span>
+      {weather.main?.temp_max}°{unit === 'metric' ? 'C' : 'F'}
+    </span>
+  </div>
+  <div>
+    <span>Wind Direction:</span>
+    <span>{weather.wind?.deg}°</span>
+  </div>
+  <div>
+    <span>Wind Speed:</span>
+    <span>{weather.wind?.speed} m/s</span>
+  </div>
+  <div>
+    <span>Humidity:</span>
+    <span>{weather.main?.humidity}%</span>
+  </div>
+  <div>
+    <span>Description:</span>
+    <span>{weather.weather[0]?.description}</span>
+  </div>
+  <div className="image-container">
+    <img
+      src={`http://openweathermap.org/img/wn/${weather.weather[0]?.icon}.png`}
+      alt={weather.weather[0]?.description}
+    />
+  </div>
+</div>
           </div>
         )}
         {showWeather && forecast && (

@@ -92,9 +92,33 @@ body {
 .current-weather img { 
   height: 100px;
 }
-.current-weather table{
+/* .current-weather table{
   width: 90%;
+} */
+.weather-info {
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 300px; /* Adjust as needed */
+  margin:  auto; /* Center the container */
 }
+
+.weather-info div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.weather-info .image-container {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.weather-info img {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+}
+
 .forecast {
   display: flex;
   flex-wrap: wrap;
