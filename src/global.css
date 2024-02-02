@@ -13,7 +13,7 @@ body {
   align-items: center;
   width: 100%;
   padding-top: 10px;
-  background-color: orange;
+  background-color: linear-gradient(to right, #ff8c00, #ff4500);
 }
 .input-container h1{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -61,7 +61,7 @@ body {
   color: whitesmoke;
   margin-top: 20px;
   padding-top: 10px;
-  background-color: #2c2e31;
+  background-color: #394e6e;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -92,14 +92,12 @@ body {
 .current-weather img { 
   height: 100px;
 }
-/* .current-weather table{
-  width: 90%;
-} */
+
 .weather-info {
   border-radius: 5px;
   padding: 10px;
-  max-width: 300px; /* Adjust as needed */
-  margin:  auto; /* Center the container */
+  max-width: 300px; 
+  margin:  auto; 
 }
 
 .weather-info div {
@@ -115,8 +113,8 @@ body {
 }
 
 .weather-info img {
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
+  width: 100px; 
+  height: 100px; 
 }
 
 .forecast {

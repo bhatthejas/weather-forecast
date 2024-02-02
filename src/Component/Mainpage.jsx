@@ -77,51 +77,6 @@ const Mainpage = () => {
           <div className="current-weather">
             <h2>Current Weather in {city}</h2>
             <button onClick={handleUnitToggle}>{unit === 'metric' ? 'Celsius' : 'Fahrenheit'}</button>
-            {/* <table cellPadding={5} cellSpacing={3}>
-              <tr>
-                <th>Date:</th>
-                <td>{getCurrentDate()}</td>
-              </tr>
-              <tr>
-                <th>Temperature:</th>
-                <td>
-                  {weather.main?.temp}°{unit === 'metric' ? 'C' : 'F'}
-                </td>
-              </tr>
-              <tr>
-                <th>Min Temperature:</th>
-                <td>
-                  {weather.main?.temp_min}°{unit === 'metric' ? 'C' : 'F'}
-                </td>
-              </tr>
-              <tr>
-                <th>Max Temperature:</th>
-                <td>
-                  {weather.main?.temp_max}°{unit === 'metric' ? 'C' : 'F'}
-                </td>
-              </tr>
-              <tr>
-                <th>Wind Direction:</th>
-                <td> {weather.wind?.deg}°</td>
-              </tr>
-              <tr>
-                <th>Wind Speed:</th>
-                <td>{weather.wind?.speed} m/s</td>
-              </tr>
-              <tr>
-                <th>Humidity:</th>
-                <td>{weather.main?.humidity}%</td>
-              </tr>
-              <tr>
-                <th>Description:</th>
-                <td>{weather.weather[0]?.description}</td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <img src={`http://openweathermap.org/img/wn/${weather.weather[0]?.icon}.png`}alt={weather.weather[0]?.description}/>
-                </td>
-              </tr>
-            </table> */}
             <div className="weather-info">
   <div>
     <span>Date:</span>
